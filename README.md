@@ -12,8 +12,8 @@
 
 ## iOS 🌦
 
-- [Swift](Android/Kotlin/README.md)
-- [Database](Android/Database/README.md)
+- [Swift](iOS/Swift/README.md)
+- [Database](iOS/Database/README.md)
 
 ## Frontend 🏢
 
