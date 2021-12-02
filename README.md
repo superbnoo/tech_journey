@@ -1,4 +1,4 @@
-# My Tech Journey
+# My Tech Journey 🍄 🌦 🏢 🏗
 
 ## Android 🍄
 
