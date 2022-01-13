@@ -1,4 +1,24 @@
 ## Jetpack Compose
+
+### AndroidView in Compose
+```kotlin
+@Composable
+fun ComposeWithXML() {
+    AndroidView(
+        factory = {
+            View.inflate(it, R.layout.custom_layout, null)
+        },
+        modifier = Modifier.fillMaxSize(),
+        update = {
+            val textView = it.findViewById<TextView>(R.id.text_view)
+            textView.setOnClickListener {
+                textView.text = "View Text updated"
+            }
+        }
+    )
+}
+```
+
 ### Partly ComposeView in Fragment
 ```kotlin
 class HomeFragment : Fragment(R.layout.home_framgment) {
