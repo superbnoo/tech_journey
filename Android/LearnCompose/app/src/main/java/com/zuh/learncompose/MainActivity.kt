@@ -1,6 +1,8 @@
 package com.zuh.learncompose
 
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -44,18 +46,32 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.viewinterop.AndroidView
 import com.zuh.learncompose.ui.theme.LearnComposeTheme
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        supportFragmentManager
-            .beginTransaction()
-            .add(R.id.content, HomeFragment())
-            .commit()
+        setContent {
+            ComposeWithXML()
+        }
     }
+}
+
+@Composable
+fun ComposeWithXML() {
+    AndroidView(
+        factory = {
+            View.inflate(it, R.layout.custom_layout, null)
+        },
+        modifier = Modifier.fillMaxSize(),
+        update = {
+            val textView = it.findViewById<TextView>(R.id.text_view)
+            textView.setOnClickListener {
+                textView.text = "View Text updated"
+            }
+        }
+    )
 }
 
 data class User(
@@ -132,6 +148,6 @@ fun UserCard() {
 @Composable
 fun DefaultPreview() {
     Surface(modifier = Modifier.fillMaxSize()) {
-        MainContent()
+        ComposeWithXML()
     }
 }
