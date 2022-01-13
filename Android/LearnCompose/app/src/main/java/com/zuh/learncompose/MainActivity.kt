@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -14,8 +15,11 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Button
+import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 
@@ -38,6 +42,15 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            UserList()
+        }
+    }
+}
+
+@Composable
+fun UserList() {
+    Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+        for (i in 1..10) {
             UserCard()
         }
     }
@@ -45,36 +58,44 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun UserCard() {
-    Row(
-        modifier = Modifier.fillMaxWidth().wrapContentHeight()
+    Card(
+        elevation = 4.dp,
+        modifier = Modifier
             .padding(12.dp)
-            .border(1.dp, color = Color.Gray)
-            .padding(12.dp)
+            .fillMaxWidth()
+            .wrapContentHeight()
     ) {
-        // alt + enter to open option to put params in separate line
-        Image(
-            painter = painterResource(id = R.drawable.ic_account_box_24),
-            contentDescription = "",
-            contentScale = ContentScale.Crop,
+        Row(
             modifier = Modifier
-                .size(120.dp)
-        )
-        Column {
-            Text(
-                text = stringResource(id = R.string.dummy_text),
-                color = Color.White
+                .fillMaxWidth()
+                .wrapContentHeight()
+                .padding(12.dp)
+        ) {
+            // alt + enter to open option to put params in separate line
+            Image(
+                painter = painterResource(id = R.drawable.ic_account_box_24),
+                contentDescription = "",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(120.dp)
             )
-            Button(onClick = { /*TODO*/ }) {
-                Text(text = "View Profile")
+            Column {
+                Text(
+                    text = stringResource(id = R.string.dummy_text)
+                )
+                Button(onClick = { /*TODO*/ }) {
+                    Text(text = "View Profile")
+                }
             }
         }
     }
+
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    Surface(modifier = Modifier.fillMaxSize(), color = Color.Black) {
+    Surface(modifier = Modifier.fillMaxSize()) {
         UserCard()
     }
 }
