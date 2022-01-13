@@ -1,4 +1,29 @@
 ## Jetpack Compose
+### Partly ComposeView in Fragment
+```kotlin
+class HomeFragment : Fragment(R.layout.home_framgment) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<ComposeView>(R.id.compose_view).setContent {
+            UserCard()
+        }
+    }
+}
+```
+
+### Full ComposeView in Fragment
+```kotlin
+class HomeFragment : Fragment(R.layout.home_framgment) {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return ComposeView(requireContext()).apply {
+            setContent {
+                UserCard()
+            }
+        }
+    }
+}
+```
 
 ### State in Compose
 ```kotlin
