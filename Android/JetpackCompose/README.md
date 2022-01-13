@@ -14,7 +14,7 @@ class HomeFragment : Fragment(R.layout.home_framgment) {
 
 ### Full ComposeView in Fragment
 ```kotlin
-class HomeFragment : Fragment(R.layout.home_framgment) {
+class HomeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return ComposeView(requireContext()).apply {
             setContent {
