@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -27,6 +28,10 @@ import androidx.compose.material.Surface
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -44,7 +49,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            UserList()
+            MainContent()
         }
     }
 }
@@ -53,24 +58,28 @@ data class User(
     val id: Int
 )
 
-val users = listOf(
-    User(1),
-    User(2),
-    User(3),
-    User(4),
-    User(5),
-    User(6),
-    User(7),
-    User(8),
-)
+@Composable
+fun MainContent() {
+    // single value: uses mutableStateOf()
+
+    val users = remember {
+        mutableStateListOf(User(1))
+    }
+    Box(modifier= Modifier.fillMaxSize()) {
+        UserList(users = users)
+        Button(modifier = Modifier
+            .padding(24.dp)
+            .align(Alignment.BottomCenter),
+            onClick = {
+                users.add(User(1))
+        }) {
+            Text("Add More")
+        }
+    }
+}
 
 @Composable
-fun UserList() {
-//    Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-//        for (i in 1..10) {
-//            UserCard()
-//        }
-//    }
+fun UserList(users: List<User>) {
 
     LazyColumn {
         items(users) { user ->
@@ -119,6 +128,6 @@ fun UserCard() {
 @Composable
 fun DefaultPreview() {
     Surface(modifier = Modifier.fillMaxSize()) {
-        UserList()
+        MainContent()
     }
 }
