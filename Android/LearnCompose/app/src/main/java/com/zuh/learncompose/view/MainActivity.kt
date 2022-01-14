@@ -1,4 +1,4 @@
-package com.zuh.learncompose
+package com.zuh.learncompose.view
 
 import android.os.Bundle
 import android.view.View
@@ -47,17 +47,19 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
+import com.zuh.learncompose.MainContent
 import com.zuh.learncompose.ui.theme.LearnComposeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposeWithXML()
+            MainContent()
         }
     }
 }
 
+/*
 @Composable
 fun ComposeWithXML() {
     AndroidView(
@@ -78,25 +80,7 @@ data class User(
     val id: Int
 )
 
-@Composable
-fun MainContent() {
-    // single value: uses mutableStateOf()
 
-    val users = remember {
-        mutableStateListOf(User(1))
-    }
-    Box(modifier= Modifier.fillMaxSize()) {
-        UserList(users = users)
-        Button(modifier = Modifier
-            .padding(24.dp)
-            .align(Alignment.BottomCenter),
-            onClick = {
-                users.add(User(1))
-        }) {
-            Text("Add More")
-        }
-    }
-}
 
 @Composable
 fun UserList(users: List<User>) {
@@ -151,3 +135,4 @@ fun DefaultPreview() {
         ComposeWithXML()
     }
 }
+*/
