@@ -112,6 +112,7 @@ fun MainContent() {
                 arguments = listOf(navArgument("item") {
                     type = NavType.StringType
                     // defaulValue = "Item not available" [needs when using optional param]
+                    // nullable = true [for optional param]
                 })
             ) {
                 val item = it.arguments?.getString("item") ?: ""
