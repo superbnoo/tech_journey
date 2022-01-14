@@ -12,13 +12,13 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 
 @Composable
-fun Task(navController: NavHostController? = null) {
+fun Task(navController: NavHostController? = null, item: String) {
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(12.dp)
     ) {
-        Text(text = "Task Detail")
+        Text(text = "Task Detail: $item")
         LazyColumn {
             var i = 0
             items((0..5).toList()) {

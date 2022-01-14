@@ -13,9 +13,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 
 // single value: uses mutableStateOf()
 
@@ -46,8 +48,15 @@ fun MainContent() {
             composable("home") {
                 Home(navController)
             }
-            composable("task") {
-                Task()
+            composable(
+                "task/{item}", // optional param: "task?item={item}",
+                arguments = listOf(navArgument("item") {
+                    type = NavType.StringType
+                    // defaulValue = "Item not available" [needs when using optional param]
+                })
+            ) {
+                val item = it.arguments?.getString("item") ?: ""
+                Task(item = item)
             }
         }
     }
