@@ -5,7 +5,6 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 31
-    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.example.daggerbyexample"
@@ -46,19 +45,20 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'com.google.android.material:material:1.5.0'
 
-//    implementation "com.google.dagger:dagger:2.33"
-//    implementation "com.google.dagger:dagger-android-support:2.33"
-//    kapt "com.google.dagger:dagger-compiler:2.33"
-//    kapt "com.google.dagger:dagger-android-processor:2.33"
-    def daggerVer = 2.27
-    implementation "com.google.dagger:dagger:$daggerVer"
-    implementation "com.google.dagger:dagger-android-support:$daggerVer"
-    kapt "com.google.dagger:dagger-android-processor:$daggerVer"
-    kapt "com.google.dagger:dagger-compiler:$daggerVer"
+//    def daggerVer = 2.27
+//    implementation "com.google.dagger:dagger:$daggerVer"
+//    implementation "com.google.dagger:dagger-android-support:$daggerVer"
+//    kapt "com.google.dagger:dagger-android-processor:$daggerVer"
+//    kapt "com.google.dagger:dagger-compiler:$daggerVer"
+    implementation 'com.google.dagger:dagger:2.40.5'
+    implementation 'com.google.dagger:dagger-android-support:2.40.5'
+    kapt 'com.google.dagger:dagger-android-processor:2.40.5'
+    kapt 'com.google.dagger:dagger-compiler:2.40.5'
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.github.bumptech.glide:glide:4.12.0'
+
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
