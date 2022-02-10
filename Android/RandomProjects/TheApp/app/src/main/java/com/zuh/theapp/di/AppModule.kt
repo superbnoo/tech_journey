@@ -10,20 +10,5 @@ import retrofit2.converter.gson.GsonConverterFactory
     ViewModelModule::class
 ])
 class AppModule {
-    val baseURL = "https://api.github.com/search/"//repositories?q=newyork
 
-    @Singleton
-    @Provides
-    fun getGithubServiceInterface(retrofit: Retrofit):GithubServiceInterface {
-        return retrofit.create(GithubServiceInterface::class.java)
-    }
-
-    @Singleton
-    @Provides
-    fun getRetroFitInstance(): Retrofit {
-        return Retrofit.Builder()
-            .baseUrl(baseURL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-    }
 }
