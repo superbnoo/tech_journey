@@ -1,6 +1,7 @@
 package com.zuh.theapp.di
 
 import android.app.Application
+import com.zuh.central.di.DatasourceModule
 import com.zuh.theapp.App
 import dagger.BindsInstance
 import dagger.Component

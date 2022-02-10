@@ -1,4 +1,4 @@
-package com.zuh.theapp.model
+package com.zuh.central.model
 
 data class RecyclerList(val items: List<RecyclerData>)
 data class RecyclerData(val name: String?, val description: String?, val owner: Owner?)

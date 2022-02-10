@@ -1,5 +1,6 @@
-package com.zuh.theapp.di
+package com.zuh.central.di
 
+import com.zuh.central.datasource.GithubServiceInterface
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -12,7 +13,7 @@ class DatasourceModule {
 
     @Singleton
     @Provides
-    fun getGithubServiceInterface(retrofit: Retrofit):GithubServiceInterface {
+    fun getGithubServiceInterface(retrofit: Retrofit): GithubServiceInterface {
         return retrofit.create(GithubServiceInterface::class.java)
     }
 

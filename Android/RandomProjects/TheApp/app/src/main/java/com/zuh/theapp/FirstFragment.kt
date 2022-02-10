@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.zuh.theapp.adapter.RecyclerViewAdapter
 import com.zuh.theapp.di.Injectable
-import com.zuh.theapp.model.RecyclerList
+import com.zuh.central.model.RecyclerList
 import javax.inject.Inject
 
 class FirstFragment : Fragment(), Injectable {

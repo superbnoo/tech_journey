@@ -1,6 +1,6 @@
-package com.zuh.theapp.di
+package com.zuh.central.datasource
 
-import com.zuh.theapp.model.RecyclerList
+import com.zuh.central.model.RecyclerList
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
