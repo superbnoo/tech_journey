@@ -2,8 +2,8 @@ package com.zuh.theapp
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.zuh.central.datasource.GithubServiceInterface
-import com.zuh.central.model.RecyclerList
+import com.zuh.central.datasource.api.GithubServiceInterface
+import com.zuh.central.datasource.model.RecyclerList
 import javax.inject.Inject
 import retrofit2.Call
 import retrofit2.Callback

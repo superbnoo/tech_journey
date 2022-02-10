@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.zuh.theapp.R
-import com.zuh.central.model.RecyclerData
+import com.zuh.central.datasource.model.RecyclerData
 import kotlinx.android.synthetic.main.recycler_view_list_row.view.*
 
 class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {

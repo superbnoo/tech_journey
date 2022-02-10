@@ -1,6 +1,6 @@
 package com.zuh.central.di
 
-import com.zuh.central.datasource.GithubServiceInterface
+import com.zuh.central.datasource.api.GithubServiceInterface
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
