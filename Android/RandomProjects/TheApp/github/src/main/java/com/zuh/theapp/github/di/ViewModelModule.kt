@@ -1,9 +1,8 @@
-package com.zuh.theapp.di
+package com.zuh.theapp.github.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.zuh.central.di.ViewModelFactory
-import com.zuh.theapp.github.FirstFragmentViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module
@@ -14,8 +13,8 @@ import kotlin.reflect.KClass
 abstract class ViewModelModule {
     @Binds
     @IntoMap
-    @ViewModelKey(com.zuh.theapp.github.FirstFragmentViewModel::class)
-    abstract fun bindFirstFragmentViewModel(fragmentViewModel: com.zuh.theapp.github.FirstFragmentViewModel): ViewModel
+    @ViewModelKey(GithubFragmentViewModel::class)
+    abstract fun bindFirstFragmentViewModel(fragmentViewModel: GithubFragmentViewModel): ViewModel
 
     @Binds
     abstract fun bindViewModelFactory(factory: ViewModelFactory): ViewModelProvider.Factory

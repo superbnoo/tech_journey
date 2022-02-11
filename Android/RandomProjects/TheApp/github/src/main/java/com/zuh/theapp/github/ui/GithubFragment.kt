@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zuh.central.datasource.ResourceState
 import com.zuh.central.datasource.model.RecyclerList
 import com.zuh.central.di.Injectable
-import com.zuh.theapp.github.FirstFragmentViewModel
+import com.zuh.theapp.github.di.GithubFragmentViewModel
 import com.zuh.theapp.github.R
 import com.zuh.theapp.github.adapter.RecyclerViewAdapter
 import javax.inject.Inject
@@ -23,7 +23,7 @@ class GithubFragment : Fragment(), Injectable {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private val viewModel: FirstFragmentViewModel by viewModels { viewModelFactory }
+    private val viewModel: GithubFragmentViewModel by viewModels { viewModelFactory }
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var recyclerViewAdapter: RecyclerViewAdapter

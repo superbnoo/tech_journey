@@ -7,5 +7,5 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class FragmentBuildersModule {
     @ContributesAndroidInjector
-    abstract fun contributeFirstFragment(): com.zuh.theapp.github.ui.GithubFragment
+    abstract fun contributeGithubFragment(): com.zuh.theapp.github.ui.GithubFragment
 }
