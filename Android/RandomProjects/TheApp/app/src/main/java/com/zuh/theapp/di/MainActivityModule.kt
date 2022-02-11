@@ -1,6 +1,6 @@
 package com.zuh.theapp.di
 
-import com.zuh.theapp.MainActivity
+import com.zuh.theapp.ui.MainActivity
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

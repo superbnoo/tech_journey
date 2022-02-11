@@ -1,7 +1,8 @@
-package com.zuh.theapp
+package com.zuh.theapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.zuh.theapp.R
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector

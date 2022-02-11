@@ -1,4 +1,4 @@
-package com.zuh.theapp
+package com.zuh.theapp.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,11 +11,12 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.Gson
 import com.zuh.central.datasource.ResourceState
 import com.zuh.theapp.adapter.RecyclerViewAdapter
 import com.zuh.theapp.di.Injectable
 import com.zuh.central.datasource.model.RecyclerList
+import com.zuh.theapp.FirstFragmentViewModel
+import com.zuh.theapp.R
 import javax.inject.Inject
 
 class FirstFragment : Fragment(), Injectable {

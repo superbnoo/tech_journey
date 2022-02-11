@@ -1,6 +1,6 @@
 package com.zuh.theapp.di
 
-import com.zuh.theapp.FirstFragment
+import com.zuh.theapp.ui.FirstFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
