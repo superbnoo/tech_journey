@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "The App"
 include ':app'
 include ':central'
+include ':github'

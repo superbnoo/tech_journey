@@ -1,4 +1,4 @@
-package com.zuh.theapp.adapter
+package com.zuh.theapp.github.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.zuh.theapp.R
+
 import com.zuh.central.datasource.model.RecyclerData
+import com.zuh.theapp.github.R
 import kotlinx.android.synthetic.main.recycler_view_list_row.view.*
 
 class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {

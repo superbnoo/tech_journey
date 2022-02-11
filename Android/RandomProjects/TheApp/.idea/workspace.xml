@@ -13,13 +13,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ed6011-fe46-434a-84fa-3e7774e84604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_github_icon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/consumer-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/src/androidTest/java/com/zuh/theapp/github/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/src/main/java/com/zuh/theapp/github/di/GithubModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github/src/test/java/com/zuh/theapp/github/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/ui/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/ui/MainFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragmentViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/java/com/zuh/theapp/github/FirstFragmentViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/adapter/RecyclerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/java/com/zuh/theapp/github/adapter/RecyclerViewAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppComponent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppInjector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppInjector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/FragmentBuildersModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/java/com/zuh/theapp/github/di/FragmentBuildersModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/Injectable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/di/Injectable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/MainActivityModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/MainActivityModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/ViewModelModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/java/com/zuh/theapp/github/di/ViewModelModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/repository/GithubRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/java/com/zuh/theapp/github/repository/GithubRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/ui/GithubFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/java/com/zuh/theapp/github/ui/GithubFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_github.xml" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/res/layout/fragment_github.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/recycler_view_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/github/src/main/res/layout/recycler_view_list_row.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph_funfacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph_funfacts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +56,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -79,12 +100,15 @@
       <recent name="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/github/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/central/src/main/java/com/zuh/central/di" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.zuh.theapp.ui" />
-      <recent name="com.zuh.theapp.di" />
-      <recent name="com.zuh.central.api" />
+      <recent name="com.zuh.central.di" />
+      <recent name="com.zuh.theapp.github.di" />
+      <recent name="com.zuh.theapp.github" />
+      <recent name="com.zuh.theapp.github.adapter" />
+      <recent name="com.zuh.theapp.github.repository" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zuh.theapp.di" />

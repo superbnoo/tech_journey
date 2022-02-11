@@ -3,6 +3,7 @@ package com.zuh.theapp.di
 import android.app.Application
 import com.zuh.central.di.DatasourceModule
 import com.zuh.theapp.App
+import com.zuh.theapp.github.di.GithubModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -13,7 +14,8 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         DatasourceModule::class,
-        AppModule::class,
+        GithubModule::class,
+        // AppModule::class,
         MainActivityModule::class
     ]
 )

@@ -1,6 +1,5 @@
-package com.zuh.theapp
+package com.zuh.theapp.github
 
-import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.zuh.central.datasource.ResourceState
 import com.zuh.central.datasource.api.GithubServiceInterface
 import com.zuh.central.datasource.model.RecyclerList
-import com.zuh.theapp.repository.GithubRepository
+import com.zuh.theapp.github.repository.GithubRepository
 import javax.inject.Inject
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -65,6 +64,7 @@ class FirstFragmentViewModel @Inject constructor(): ViewModel() {
 //                }
 //            }
         //}
+
         viewModelScope.launch {
             githubRepository.getGithubRepos(query).collect {
                 _githubListResponse.value = it

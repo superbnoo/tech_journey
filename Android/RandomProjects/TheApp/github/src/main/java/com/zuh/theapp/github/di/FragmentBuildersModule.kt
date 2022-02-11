@@ -1,6 +1,5 @@
-package com.zuh.theapp.di
+package com.zuh.theapp.github.di
 
-import com.zuh.theapp.ui.GithubFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -8,5 +7,5 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class FragmentBuildersModule {
     @ContributesAndroidInjector
-    abstract fun contributeFirstFragment(): GithubFragment
+    abstract fun contributeFirstFragment(): com.zuh.theapp.github.ui.GithubFragment
 }

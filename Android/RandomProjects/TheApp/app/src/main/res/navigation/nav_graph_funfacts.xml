@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/githubFragment"
-        android:name="com.zuh.theapp.ui.GithubFragment"
+        android:name="com.zuh.theapp.github.ui.GithubFragment"
         tools:layout="@layout/fragment_github"
         android:label="GithubFragment" />
 
     <fragment
         android:id="@+id/dogFunFactsFragment"
-        android:name="com.zuh.theapp.ui.GithubFragment"
+        android:name="com.zuh.theapp.github.ui.GithubFragment"
         tools:layout="@layout/fragment_github"
         android:label="DogFunFactsFragment" />
 
     <fragment
         android:id="@+id/catFunFactsFragment"
-        android:name="com.zuh.theapp.ui.GithubFragment"
+        android:name="com.zuh.theapp.github.ui.GithubFragment"
         tools:layout="@layout/fragment_github"
         android:label="CatFunFactsFragment" />
 </navigation>

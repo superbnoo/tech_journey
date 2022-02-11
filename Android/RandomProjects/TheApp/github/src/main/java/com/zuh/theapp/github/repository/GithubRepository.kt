@@ -1,4 +1,4 @@
-package com.zuh.theapp.repository
+package com.zuh.theapp.github.repository
 
 import com.zuh.central.datasource.GithubDatasource
 import com.zuh.central.datasource.ResourceState

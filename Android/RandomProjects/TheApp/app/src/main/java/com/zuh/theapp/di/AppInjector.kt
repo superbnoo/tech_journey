@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
+import com.zuh.central.di.Injectable
 import com.zuh.theapp.App
 import dagger.android.AndroidInjection
 import dagger.android.HasAndroidInjector
