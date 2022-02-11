@@ -5,6 +5,6 @@ import retrofit2.Response
 
 interface GithubDatasource {
 
-    suspend fun getGithubRepos(number: Int): Response<ArrayList<RecyclerList>>
+    suspend fun getGithubRepos(query: String): Response<RecyclerList>
 
 }

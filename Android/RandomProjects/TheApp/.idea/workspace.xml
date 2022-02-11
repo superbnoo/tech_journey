@@ -5,24 +5,28 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ed6011-fe46-434a-84fa-3e7774e84604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubDatasource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/ResourceState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/CatFactsResModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/DogFactsResModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/utils/NetworkBoundSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/repository/GithubRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubDatasourceImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragmentViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragmentViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/adapter/RecyclerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/adapter/RecyclerViewAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/central/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubServiceInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/api/GithubServiceInterface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubDatasource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubDatasource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/api/GithubServiceInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/api/GithubServiceInterface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/CatFactsResModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/CatFactsResModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/DogFactsResModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/DogFactsResModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/RecyclerList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/RecyclerList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/di/DatasourceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/di/DatasourceModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/model/RecyclerList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/RecyclerList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/utils/NetworkBoundSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/utils/NetworkBoundSource.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +71,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />

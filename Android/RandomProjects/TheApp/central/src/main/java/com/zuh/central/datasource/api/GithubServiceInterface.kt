@@ -12,5 +12,5 @@ interface GithubServiceInterface {
     fun getDataFromAPI(@Query("q")query: String): Call<RecyclerList>?
 
     @GET("repositories")
-    fun getGithubRepos(@Query("q")query: String): Response<ArrayList<RecyclerList>>
+    suspend fun getGithubRepos(@Query("q")query: String): Response<RecyclerList>
 }

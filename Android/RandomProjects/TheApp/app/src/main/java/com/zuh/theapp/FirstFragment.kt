@@ -11,6 +11,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
+import com.zuh.central.datasource.ResourceState
 import com.zuh.theapp.adapter.RecyclerViewAdapter
 import com.zuh.theapp.di.Injectable
 import com.zuh.central.datasource.model.RecyclerList
@@ -48,7 +50,7 @@ class FirstFragment : Fragment(), Injectable {
         recyclerView.adapter = recyclerViewAdapter
     }
 
-    private fun initViewModel() {
+    private fun initViewModelOld() {
         viewModel.getLiveDataObserver().observe(requireActivity(), Observer<RecyclerList> { t ->
             if(t != null) {
                 recyclerViewAdapter.setUpdatedData(t.items)
@@ -58,5 +60,44 @@ class FirstFragment : Fragment(), Injectable {
             }
         })
         viewModel.makeApiCall()
+    }
+
+    private fun initViewModel() {
+//        viewModel.githubListResponse.observe(viewLifecycleOwner, Observer {
+//            when (it) {
+//                is ResourceState.Success -> {
+////                    CoreUtility.printLog(TAG, "Inside_dogFunFactsResponse_success ${Gson().toJson(it)}")
+////                    viewModel.loadingVisibility.value = View.GONE
+//                    it.data?.also { facts->
+//                        setUpDogFactsRecyclerView(facts)
+//                    }
+//                }
+//                is ResourceState.Error -> {
+//                    viewModel.loadingVisibility.value = View.GONE
+//                    CoreUtility.printLog(TAG, "Inside_dogFunFactsResponse_error ${it.message}")
+//                    Toast.makeText(context,it.message,Toast.LENGTH_LONG).show()
+//                }
+//                is ResourceState.Loading -> {
+//                    // viewModel.loadingVisibility.value = View.VISIBLE
+//                }
+//            }
+//        })
+        viewModel.githubListResponse.observe(viewLifecycleOwner, Observer {
+            when (it) {
+                is ResourceState.Success -> {
+                    it.data?.also { t ->
+                        recyclerViewAdapter.setUpdatedData(t.items)
+                        recyclerViewAdapter.notifyDataSetChanged()
+                    }
+                }
+                is ResourceState.Error -> {
+                    print(it)
+                }
+                is ResourceState.Loading -> {
+                    print(it)
+                }
+            }
+        })
+        viewModel.getGithubRepos("react")
     }
 }

@@ -30,6 +30,7 @@ abstract class NetworkBoundSource<API_RESPONSE_TYPE, MAPPED_RETURN_TYPE> {
             // Parse body
             val remoteData = apiResponse.body()
 
+
             // Check for response
             if (apiResponse.isSuccessful && remoteData != null) {
                 // Emit success state with data
