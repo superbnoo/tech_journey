@@ -1,4 +1,4 @@
-package com.zuh.theapp
+package com.zuh.central.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

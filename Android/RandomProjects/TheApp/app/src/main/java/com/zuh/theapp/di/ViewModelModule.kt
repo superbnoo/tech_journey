@@ -2,8 +2,8 @@ package com.zuh.theapp.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.zuh.central.di.ViewModelFactory
 import com.zuh.theapp.FirstFragmentViewModel
-import com.zuh.theapp.ViewModelFactory
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module

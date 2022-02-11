@@ -13,20 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ed6011-fe46-434a-84fa-3e7774e84604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/repository/GithubRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubDatasourceImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragmentViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/FirstFragmentViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/ViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/di/ViewModelFactory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/AppModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubDatasource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/GithubDatasource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/api/GithubServiceInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/api/GithubServiceInterface.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/CatFactsResModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/CatFactsResModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/DogFactsResModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/DogFactsResModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/RecyclerList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/datasource/model/RecyclerList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/di/DatasourceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/di/DatasourceModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/utils/NetworkBoundSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/central/src/main/java/com/zuh/central/utils/NetworkBoundSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/ViewModelModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuh/theapp/di/ViewModelModule.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
