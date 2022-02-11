@@ -1,5 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/github_lovers"
+        android:enabled="true"
+        android:icon="@drawable/ic_github_icon"
+        android:title="@string/github_lovers"/>
+    <item
         android:id="@+id/cat_lovers"
         android:enabled="true"
         android:icon="@drawable/ic_cat_icon"

@@ -19,7 +19,7 @@ import com.zuh.theapp.FirstFragmentViewModel
 import com.zuh.theapp.R
 import javax.inject.Inject
 
-class FirstFragment : Fragment(), Injectable {
+class GithubFragment : Fragment(), Injectable {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
@@ -33,7 +33,7 @@ class FirstFragment : Fragment(), Injectable {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false).also {
+        return inflater.inflate(R.layout.fragment_github, container, false).also {
             recyclerView = it.findViewById(R.id.recyclerView)
         }
     }

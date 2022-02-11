@@ -28,6 +28,9 @@ class MainFragment : Fragment() {
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {
+                R.id.github_lovers -> {
+                    mainNavHost.findNavController().navigate(R.id.githubFragment)
+                }
                 R.id.cat_lovers -> {
                     mainNavHost.findNavController().navigate(R.id.catFunFactsFragment)
                 }

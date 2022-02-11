@@ -5,17 +5,21 @@
     android:id="@+id/central_navigation"
     app:startDestination="@id/catFunFactsFragment">
 
+    <fragment
+        android:id="@+id/githubFragment"
+        android:name="com.zuh.theapp.ui.GithubFragment"
+        tools:layout="@layout/fragment_github"
+        android:label="GithubFragment" />
 
     <fragment
         android:id="@+id/dogFunFactsFragment"
-        android:name="com.zuh.theapp.ui.FirstFragment"
-        tools:layout="@layout/fragment_first"
+        android:name="com.zuh.theapp.ui.GithubFragment"
+        tools:layout="@layout/fragment_github"
         android:label="DogFunFactsFragment" />
-
 
     <fragment
         android:id="@+id/catFunFactsFragment"
-        android:name="com.zuh.theapp.ui.FirstFragment"
-        tools:layout="@layout/fragment_first"
+        android:name="com.zuh.theapp.ui.GithubFragment"
+        tools:layout="@layout/fragment_github"
         android:label="CatFunFactsFragment" />
 </navigation>

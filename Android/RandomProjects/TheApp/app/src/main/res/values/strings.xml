@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">The App</string>
+    <string name="github_lovers">Github Lovers</string>
     <string name="cat_lovers">Cat Lovers</string>
     <string name="dog_lovers">Dog Lovers</string>
 </resources>
