@@ -10,3 +10,5 @@ rootProject.name = "The App"
 include ':app'
 include ':central'
 include ':github'
+include ':cats'
+include ':dogs'
