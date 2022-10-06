@@ -3,6 +3,7 @@
 ## Android 🍄
 
 - [Layout](Android/Layout/README.md)
+- [View Binding](Android/ViewBinding/README.md)
 - [Kotlin](Android/Kotlin/README.md)
 - [Webservice](Android/Webservice/README.md)
 - [Database](Android/Database/README.md)
