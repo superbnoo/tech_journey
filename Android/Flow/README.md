@@ -25,3 +25,20 @@
     // call
     viewModel.testCouroutineCall() // [1, 3, 4, 6, 8, 9, 2, 5, 7, 10]
 ```
+
+```
+    private suspend fun testAnotherFlow() {
+        val test = listOf(2,3,4,5,6,7,8,9,10)
+        val flowList = test.map {
+            flow {
+                delay(300L)
+                emit(it % 10 == 2)
+            }
+        }
+        var result = false
+        flowList.merge().collect {
+            result = result or it
+        }
+        android.util.Log.d("vatran", "$result")
+    }
+```
